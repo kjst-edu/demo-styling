@@ -1,11 +1,12 @@
 [project]
-name = "shinyapps-template"
+name = "demo-styling"
 version = "0.1.0"
-description = "Add your description here"
+description = "Course material for app with custom CSS"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
     "shiny>=1.1.0",
+    "shinyswatch>=0.7.0",
 ]
 
 [tool.uv]

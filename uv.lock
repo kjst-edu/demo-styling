@@ -58,6 +58,29 @@ wheels = [
 ]
 
 [[package]]
+name = "demo-styling"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "shiny" },
+    { name = "shinyswatch" },
+]
+
+[package.dev-dependencies]
+dev = [
+    { name = "rsconnect-python" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "shiny", specifier = ">=1.1.0" },
+    { name = "shinyswatch", specifier = ">=0.7.0" },
+]
+
+[package.metadata.requires-dev]
+dev = [{ name = "rsconnect-python", specifier = ">=1.24.0" }]
+
+[[package]]
 name = "h11"
 version = "0.14.0"
 source = { registry = "https://pypi.org/simple" }
@@ -255,23 +278,19 @@ wheels = [
 ]
 
 [[package]]
-name = "shinyapps-template"
-version = "0.1.0"
-source = { virtual = "." }
+name = "shinyswatch"
+version = "0.7.0"
+source = { registry = "https://pypi.org/simple" }
 dependencies = [
+    { name = "htmltools" },
+    { name = "packaging" },
     { name = "shiny" },
+    { name = "typing-extensions" },
 ]
-
-[package.dev-dependencies]
-dev = [
-    { name = "rsconnect-python" },
+sdist = { url = "https://files.pythonhosted.org/packages/7a/ff/f0d4e9db219c89858e0107d4d31f501a23309a5c1e55ecc4a3c345ad2a74/shinyswatch-0.7.0.tar.gz", hash = "sha256:3f845154ae59b26dc30c1ee7aeb2ea49a204ef8ed56b0c7057c183bb73d80f24", size = 1297330 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/ac/51/f6e337ebd72694fdc925828ad3b6b7a7a57164699493d6f87a547f870069/shinyswatch-0.7.0-py3-none-any.whl", hash = "sha256:c1f8409206abf0d4cd6bf46d7daa481b9ddf1e98a7ca4cf439bb674c371810ae", size = 1311164 },
 ]
-
-[package.metadata]
-requires-dist = [{ name = "shiny", specifier = ">=1.1.0" }]
-
-[package.metadata.requires-dev]
-dev = [{ name = "rsconnect-python", specifier = ">=1.24.0" }]
 
 [[package]]
 name = "sniffio"

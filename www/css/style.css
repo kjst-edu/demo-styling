@@ -1,0 +1,17 @@
+.container {
+    margin: 1rem auto 0;
+    width: 80%;
+    max-width: 600px;
+}
+
+h1 {
+    color: coral;
+}
+
+
+.hello h2 {
+    background-color: black;
+    color: yellow;
+    margin-top: 1rem;
+    padding: 10px 20px 10px;
+}
